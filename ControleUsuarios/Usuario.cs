@@ -1,23 +1,27 @@
 ﻿namespace ControleUsuarios
 {
-  public class Usuario
-  {
-    public Usuario(string nome, int idade)
+    public class Usuario
     {
-      Nome = nome;
-      Idade = idade;
-    }
+        public Usuario()
+        {
+        }
 
-    public string Nome { get; set; }
-    public int Idade { get; set; }
+        public Usuario(string nome, int idade)
+        {
+            Nome = nome;
+            Idade = idade;
+        }
 
-    public bool maiorDeIdade()
-    {
-      if (Idade >= 18) {
-        return true;
-      } else {
-        return false;
-      }
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+
+        public bool maiorDeIdade()
+        {
+            if (Idade >= 18) {
+            return true;
+            } else {
+            return false;
+            }
+        }
     }
-  }
 }
